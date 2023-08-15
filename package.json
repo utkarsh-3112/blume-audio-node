@@ -1,5 +1,5 @@
 {
-  "name": "blume-audio-node",
+  "name": "tune-trace-node",
   "version": "1.0.0",
   "engines": {
     "node": "16.x"

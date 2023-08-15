@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import fs, {createWriteStream} from "fs";
 import PDFDocument from "pdfkit";
+import dotenv from 'dotenv';
+
+dotenv.config();
 export default async function sendEmail(emailAddress, pdfJson, transcript) {
     const doc = new PDFDocument();
     const fileName = "summary.pdf";

@@ -5,6 +5,9 @@ import * as FileType from "file-type";
 import { Configuration, OpenAIApi } from "openai";
 import sendEmail from "../utils/sendEmail.js";
 import {getPdfJson} from "../utils/pdf.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const config = new Configuration({
   apiKey: process.env.OPENAI_APIKEY,

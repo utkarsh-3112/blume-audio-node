@@ -14,7 +14,7 @@ export function getPdfJson(summaryJson, selectedOption) {
             pdfJson["Title"] = (pdfJson["Title"] || "") + pdfReport["Title"];
             pdfJson["Artist"] = (pdfJson["Artist"] || "") + pdfReport["Artist"];
             pdfJson["Genre"] = (pdfJson["Genre"] || "") + pdfReport["Genre"];
-            pdfJson["Message and Story"] = (pdfJson["Message Story"] || "") + pdfReport["Message Story"];
+            pdfJson["Message and Story"] = (pdfJson["Message and Story"] || "") + pdfReport["Message and Story"];
             pdfReport["Main Themes"].forEach((point) => {
                 if (!pdfJson["Main Themes"].includes(point)) {
                     pdfJson["Main Themes"].push(point);
